@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="gb2312"?>
+<project ver="8" name="iphone" libEmbed="true" icon="iphone.ico" ui="win" output="iphone.exe" CompanyName="hook747" FileDescription="iphone tools" LegalCopyright="Copyright (C) hook747 2015" ProductName="iphone tools" InternalName="iphone tools" FileVersion="0.0.0.14" ProductVersion="0.0.0.14" publishDir="/Publish/">
+	<file name="main.aau" path="main.aau" comment="default.main.aau"/>
+	<folder name="资源文件" path="res" embed="true">
+		<file name="picList.html" path="res\picList.html" comment="res\picList.html"/>
+		<file name="others.html" path="res\others.html" comment="res\others.html"/>
+		<file name="main.html" path="res\main.html" comment="res\main.html"/>
+		<file name="index.html" path="res\index.html" comment="res\index.html"/>
+		<file name="fileSystem.html" path="res\fileSystem.html" comment="res\fileSystem.html"/>
+		<file name="deviceInfo.html" path="res\deviceInfo.html" comment="res\deviceInfo.html"/>
+		<file name="appList.html" path="res\appList.html" comment="res\appList.html"/>
+		<file name="about.html" path="res\about.html" comment="res\about.html"/>
+		<folder name="styles" path="res\styles" comment="res\styles">
+			<file name="main.css" path="res\styles\main.css" comment="res\styles\main.css"/>
+			<file name="base.css" path="res\styles\base.css" comment="res\styles\base.css"/>
+			<folder name="images" path="res\styles\images" comment="res\styles\images">
+				<file name="uninstall.png" path="res\styles\images\uninstall.png" comment="res\styles\images\uninstall.png"/>
+				<file name="shutdown.png" path="res\styles\images\shutdown.png" comment="res\styles\images\shutdown.png"/>
+				<file name="restart.png" path="res\styles\images\restart.png" comment="res\styles\images\restart.png"/>
+				<file name="please_connect.png" path="res\styles\images\please_connect.png" comment="res\styles\images\please_connect.png"/>
+				<file name="photo.png" path="res\styles\images\photo.png" comment="res\styles\images\photo.png"/>
+				<file name="other.png" path="res\styles\images\other.png" comment="res\styles\images\other.png"/>
+				<file name="loading.gif" path="res\styles\images\loading.gif" comment="res\styles\images\loading.gif"/>
+				<file name="home.png" path="res\styles\images\home.png" comment="res\styles\images\home.png"/>
+				<file name="folder.png" path="res\styles\images\folder.png" comment="res\styles\images\folder.png"/>
+				<file name="filesys.png" path="res\styles\images\filesys.png" comment="res\styles\images\filesys.png"/>
+				<file name="device.png" path="res\styles\images\device.png" comment="res\styles\images\device.png"/>
+				<file name="default_app.png" path="res\styles\images\default_app.png" comment="res\styles\images\default_app.png"/>
+				<file name="app.png" path="res\styles\images\app.png" comment="res\styles\images\app.png"/>
+				<file name="about.png" path="res\styles\images\about.png" comment="res\styles\images\about.png"/>
+				<folder name="device" path="res\styles\images\device" comment="res\styles\images\device">
+					<file name="ipod.png" path="res\styles\images\device\ipod.png" comment="res\styles\images\device\ipod.png"/>
+					<file name="iphone6_black.png" path="res\styles\images\device\iphone6_black.png" comment="res\styles\images\device\iphone6_black.png"/>
+					<file name="iphone6.png" path="res\styles\images\device\iphone6.png" comment="res\styles\images\device\iphone6.png"/>
+					<file name="iphone5_black.png" path="res\styles\images\device\iphone5_black.png" comment="res\styles\images\device\iphone5_black.png"/>
+					<file name="iphone5c.png" path="res\styles\images\device\iphone5c.png" comment="res\styles\images\device\iphone5c.png"/>
+					<file name="iphone5.png" path="res\styles\images\device\iphone5.png" comment="res\styles\images\device\iphone5.png"/>
+					<file name="iphone4_black.png" path="res\styles\images\device\iphone4_black.png" comment="res\styles\images\device\iphone4_black.png"/>
+					<file name="iphone4.png" path="res\styles\images\device\iphone4.png" comment="res\styles\images\device\iphone4.png"/>
+					<file name="iphone3.png" path="res\styles\images\device\iphone3.png" comment="res\styles\images\device\iphone3.png"/>
+					<file name="ipad.png" path="res\styles\images\device\ipad.png" comment="res\styles\images\device\ipad.png"/>
+				</folder>
+			</folder>
+		</folder>
+	</folder>
+	<folder name="动态库" path="dll" comment="dll" embed="false">
+		<file name="msvcr110.dll" path="dll\msvcr110.dll" comment="dll\msvcr110.dll"/>
+		<file name="libxml2-2.dll" path="dll\libxml2-2.dll" comment="dll\libxml2-2.dll"/>
+		<file name="libusbmuxd.dll" path="dll\libusbmuxd.dll" comment="dll\libusbmuxd.dll"/>
+		<file name="libplist.dll" path="dll\libplist.dll" comment="dll\libplist.dll"/>
+		<file name="libimobiledevice.dll" path="dll\libimobiledevice.dll" comment="dll\libimobiledevice.dll"/>
+		<file name="libidevice.dll" path="dll\libidevice.dll" comment="dll\libidevice.dll"/>
+		<file name="libiconv-2.dll" path="dll\libiconv-2.dll" comment="dll\libiconv-2.dll"/>
+		<file name="libgcc_s_dw2-1.dll" path="dll\libgcc_s_dw2-1.dll" comment="dll\libgcc_s_dw2-1.dll"/>
+	</folder>
+	<folder name="窗体" path="form" comment="目录" embed="true">
+		<file name="about.aau" path="form\about.aau" comment="form\about.aau"/>
+	</folder>
+</project>

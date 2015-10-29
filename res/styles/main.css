@@ -1,0 +1,115 @@
+﻿#header {
+	height:auto;
+}
+#headerTitle {
+	height:25px;
+	line-height:25px;
+}
+#headerTools ul {
+	display:block;
+	margin:0;
+	padding:0px 0 0 10px;
+	overflow:hidden;
+	background:rgb(123, 138, 148);
+	flow:horizontal;
+}
+#headerTools  ul  li {
+	list-style:none;
+	height:60px;
+	width:55px;
+	float:left;
+	margin-right:10px;
+	padding:12px 8px 0px 8px;
+	text-align:center;
+	behavior:~url(main.link);
+}
+#headerTools  ul  li[selected=selected] {
+	background-color:#76848E;
+}
+#headerTools  ul  li:hover {
+	background-color:#778792;
+}
+#headerTools  ul  li a {
+	display:block;
+	height:50px;
+	width:50px;
+	cursor:pointer;
+	text-decoration:none;
+	text-align:center;	
+}
+#headerTools  ul  li a img{
+	display:block;
+	height:32px;
+	width:32px;	
+	margin:0 auto;
+	border:0;
+}
+#headerTools  ul  li a>label {
+	display:block;
+	width:100%%;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+	color:#FFF;
+	font-size:12px;
+}
+#deviceListDiv {
+	width:170px;
+	height:100%%;
+	background:#F0F0F0;
+	overflow:auto; vertical-scrollbar: tv_scrollbar;
+	padding: 0;
+	font-size:12px;
+	color:#666;
+}
+#deviceListTip span {
+	height:50px;	
+	line-height:50px;
+	padding-left:10px;
+}
+#loadingDeviceTip {
+	display:block;
+	width:40px;
+	height:15px;
+}
+#deviceListTip .animate {
+	background:url(/res/styles/images/loading.gif) no-repeat center center;
+}
+#deviceListUl {margin:0;padding:0;}
+#deviceListUl li {
+	list-style:none;
+	display:block;
+	width:100%%;
+	line-height:30px;
+	cursor:pointer;	
+	padding:15px 10px;
+	margin-bottom:10px;
+	behavior:~url(main.deviceList);	
+	border-bottom:1px solid #E2E2E2;
+}
+#deviceListUl li img {
+	height:32px;
+	width:32px;
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+}
+#deviceListUl li label {
+	font-size:12px;
+	margin-left:5px;
+	width:113px;
+	display:inline-block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#deviceListUl li:hover {
+	background:#E8E8E8;
+}
+#deviceListUl li[selected=selected]{
+	background:#E8E8E8;
+}
+#contentDiv , #contentFrame {
+	width:100%%;
+	height:100%%;
+}

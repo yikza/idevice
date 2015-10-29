@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <style type="text/css">
+	#container {height:100%%;}
+	#cwrap {margin-top:50px;flow:horizontal;}
+	#left {height:230px;width:300px;}
+	#left img {border:0;width:160px;height:200px;margin:0 auto;}
+	#content div {height:35px;line-height:35px;font-size:12px;color:#333;}
+	#content div label{display:inline-block;width:80px;text-align:right;color:#666;font-weight:700;}
+	#content div span{margin-left:20px;}
+	#diskInfo {width:100%;font-size:12px;}
+	#disktip{width:90%;height:30px;margin:0 auto;margin-top:20px;flow:horizontal;text-align:left;font-weight:700;}
+	#diskTotal{width:90%;height:30px;line-height:30px;margin:0 auto;flow:horizontal;text-align:center;}
+	#diskUse{height:30px;width:100px;background:#A0495D;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+	#diskFree{height:30px;width:50px;background:#E8D58C;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+	#legend{margin:0 auto;margin-top:30px;font-size:12px;color:#333;text-align:center;flow:horizontal;}
+	#legend div{margin-right:50px;height:16px;width:100px;line-height:16px;text-align:center;}
+	#legend div span{display:inline-block;width:16px;height:16px;margin-right:8px;}
+	#legendUse span{background:#A0495D;}
+	#legendFree span{background:#E8D58C;}
+  </style>
+</head> 
+<body>
+    <div id="container"> 
+			<div id="cwrap">
+				<div id="left">
+					<img id="icon" src="styles/images/device/iphone6_black.png"/>
+				</div>
+				<div id="content">
+					<div><label>设备名称：</label><span>3434</span></div>
+					<div><label>设备类型：</label><span>3434</span></div>
+					<div><label>颜色：</label><span>43434</span></div>
+					<div><label>版本：</label><span>4324343</span></div>
+					<div><label>序列号：</label><span>434324</span></div>
+					<div><label>电话号码：</label><span>43243</span></div>				
+				</div>
+			</div>
+			<div id="diskInfo">
+				<div id="disktip">存储空间:</div>
+				<div id="diskInfoShow">
+					<div id="diskTotal"><div id="diskUse"></div><div id="diskFree"></div></div>
+				</div>
+				<div id="legend">
+					<div id="legendUse"><span></span>已用</div><div id="legendFree"><span></span>空闲</div>
+				</div>
+			</div>
+    </div>    
+</body>
+</html>

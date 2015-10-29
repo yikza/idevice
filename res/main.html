@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head> 
+<body>
+    <div id="header"> 
+		<div id="headerTitle">
+			<div class="titlebox">
+				<a command="window-min" onclick="minWindow()">0</a><a command="window-max">1</a><a command="window-close" onclick="closeWindow()">r</a>
+			</div> 
+			<div class="title-bar" command="window-caption"> <span class="title">iphone tools</span></div>
+		</div>
+		<div id="headerTools">
+			<ul>
+				<li link="index"><a><img src="/res/styles/images/home.png"/><label>首页</label></a></li>
+				<li link="applist"><a><img src="/res/styles/images/app.png"/><label>应用</label></a></li>
+				<li link="piclist"><a><img src="/res/styles/images/photo.png"/><label>照片</label></a></li>
+				<li link="filesystem"><a><img src="/res/styles/images/filesys.png"/><label>文件</label></a></li>
+				<li link="others"><a><img src="/res/styles/images/other.png"/><label>其他</label></a></li>
+				<li link="about"><a><img src="/res/styles/images/about.png"/><label>关于</label></a></li>
+			</ul>
+		</div>
+    </div> 
+    <div id="container"> 
+		<div id="deviceListDiv">
+			<div id="deviceListTip">
+				<span>已连接的设备：</span><label id="loadingDeviceTip"></label>
+			</div>
+			<ul id="deviceListUl">
+				<li><img src="styles/images/device.png"/><label>iphone6s</label></li>
+				<li><img src="styles/images/device.png"/><label>ipad2</label></li>
+				<li><img src="styles/images/device.png"/><label>ipod5</label></li>
+			</ul>
+		</div>
+		<div id="contentDiv">
+			<frame src="/res/index.html" id="contentFrame"/>
+		</div>		
+    </div>
+    
+</body>
+</html>

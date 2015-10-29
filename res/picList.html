@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <style type="text/css">
+	body {context-menu: selector(menu#context-page);}
+	#tools button {width:30px;height:20px;padding:5px;margin-right:20px;}
+	#list {height:100%%;display:table;font-size:12px;color:#333;}
+	#listhead,#listcontent div {display:table-row;border-bottom:1px solid #F0F0F0;}
+	#listcontent div {margin:0;padding:0;}
+	#listcontent div[xtype="dir"]{behavior:~url(main.dir);context-menu:selector(menu#context-dir);}
+	#listcontent div[xtype="file"]{behavior:~url(main.file);context-menu:selector(menu#context-file);}
+	#listcontent div:hover {background:#F0F0F0;}
+	#listcontent div span,#listhead span {
+		display:inline-block;
+		height:35px;
+		width:100px;
+		vertical-align:middle;
+		line-height:35px;
+		text-align:center;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+	#listhead .cellname,#listcontent div .cellname {text-align:left;width:200px;margin-left:10px;}
+	#listhead .celltime,#listcontent div .celltime {width:150px;}
+	#listhead span {color:#666;font-weight:700;height:40px;line-height:40px;}
+	#listcontent div span img {width:32px;height:32px;display:inline;}
+	img.fileicon {behavior:file-icon;vertical-align:middle;}
+	menu.context {behavior:~url(main.context);}
+	menu.context li:hover {background:#C79999;}
+  </style>
+  
+</head> 
+<body>
+    <div id="container"> 
+		<div id="tools">
+			
+		</div>
+		<div id="list">
+			<div id="listhead">
+				<span class="cellname">名称</span><span class="celltime">修改时间</span><span>类型</span><span>link</span>
+			</div>
+			<div id="listcontent">
+				<div>
+					<span class="cellname"><img class="fileicon" filename=".html"/>xxxxx</span><span class="celltime">xxxxxx</span><span>1.0.1</span><span>1.1.1</span>
+				</div>
+				<div>
+					<span class="cellname"><img class="fileicon" filename=".txt"/>xxxx</span><span class="celltime">xxxxxx</span><span>1.0.1</span><span>1.1.1</span>
+				</div>
+			</div>		
+		</div>
+		<popup>
+			<menu.context id="context-page">
+				<li id="miListPicParentPath1">返回父目录</li>
+				<li id="miListPicRootPath1">返回根目录</li>
+			</menu>
+			<menu.context id="context-dir">
+				<li id="miDeletePath1">删除</li>
+				<li id="miListPicParentPath2">返回父目录</li>
+				<li id="miListPicRootPath2">返回根目录</li>
+			</menu>
+			<menu.context id="context-file">				
+				<li id="miDownloadFile">下载</li>
+				<li id="miDeletePath2">删除</li>
+				<li id="miListPicParentPath3">返回父目录</li>
+				<li id="miListPicRootPath3">返回根目录</li>
+			</menu>
+		</popup>
+    </div>    
+</body>

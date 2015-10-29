@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <style type="text/css">
+	#toolList {font-size:12px;color:#333;}
+	#tip {font-weight:700;line-height:50px;margin-left:15px;}
+	#toolList ul {display:block;overflow:hidden;flow:horizontal;}
+	#toolList ul li {list-style:none;width:60px;margin:0px 50px 30px 0px;text-align:center;}
+	#toolList ul li button {width:60px;height:60px;cursor:pointer;behavior:~url(main.button);}
+	#toolList ul li span {display:inline-block;line-height:24px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+	#btnDeviceShutdown {background:url(styles/images/shutdown.png) no-repeat center center;}
+	#btnDeviceRestart {background:url(styles/images/restart.png) no-repeat center center;}
+  </style>
+</head> 
+<body>
+    <div id="container"> 
+		<div id="toolList">
+			<div id="tip">系统工具</div>
+			<ul>
+				<li><button id="btnDeviceShutdown"></button><span>关 机</span></li>
+				<li><button id="btnDeviceRestart"></button><span>重 启</span><li>
+			</ul>
+		</div>
+    </div>    
+</body>

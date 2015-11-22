@@ -168,8 +168,9 @@ namespace libidevice.device{
 			var deviceModel = ..string.split(deviceInfo.model,",");
 			icon = ..string.lower(..string.trim(deviceModel[1]));
 			icon = ..string.sub(icon,1,7);	
-			if(..string.indexOf("iphone4,iphone5,iphone6",icon)) {		
-				if(deviceInfo.device_color == "black") {
+			if(..string.indexOf("iphone4,iphone5,iphone6",icon)) {
+				var color = ..string.lower(deviceInfo.device_color);	
+				if(color == "black" || color == "space gray") {
 					icon += "_black";
 				}
 			} else {
@@ -197,7 +198,7 @@ namespace libidevice.device{
 	};
 	
 	showAppList = function(appList) {
-		
+			
 		var frame = ..wbLayout.getEle("contentFrame");
 		frame.xcall("load","/res/appList.html");
 		frame.src = "/res/applist.html";
@@ -211,6 +212,9 @@ namespace libidevice.device{
 		var downIconTask = thread.works( 5,getAppDetail,1000);
 		var appDataPath  = ..fsys.getSpecial(0x1a /*_CSIDL_APPDATA*/) + "\iphonetools\app\";		
 		for(i=1;#appList) {	
+			if(!appList[i].s_appid || !appList[i].s_name) {
+				continue;
+			}
 			var appid = appList[i].s_appid;
 			var icon  = "/res/styles/images/default_app.png";
 			var exist = ..io.exist(appDataPath+appid+".jpg");

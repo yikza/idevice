@@ -10,6 +10,8 @@ namespace libidevice;
 ..raw.loadDll("\dll\libiconv-2.dll");
 ..raw.loadDll("\dll\libxml2-2.dll");
 ..raw.loadDll("\dll\msvcr110.dll");
+..raw.loadDll("\dll\libeay32.dll");
+..raw.loadDll("\dll\ssleay32.dll");
 ..raw.loadDll("\dll\libplist.dll", ,"cdecl");
 ..raw.loadDll("\dll\libusbmuxd.dll", ,"cdecl");
 ..raw.loadDll("\dll\libimobiledevice.dll", ,"cdecl");

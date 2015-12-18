@@ -1,4 +1,4 @@
-## idevice tools
+## idevice
 idevice demo with [libimobiledevice](https://github.com/libimobiledevice/libimobiledevice)
 
 ## install

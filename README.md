@@ -1,5 +1,3 @@
-![Logo](https://raw.githubusercontent.com/hook747/idevice/master/iphone.ico)
-
 ## idevice
 idevice demo with libimobiledevice
 

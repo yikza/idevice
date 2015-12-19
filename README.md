@@ -5,6 +5,6 @@ idevice demo with [libimobiledevice](https://github.com/libimobiledevice/libimob
 build with htmlayout and aardio , or just download exe at https://github.com/xhook7/idevice/blob/master/Publish/iphone.exe?raw=true
 
 ## demo
-![Demo](https://github.com/xhook7/idevice/raw/master/Publish/demo.gif)
+![Demo](https://github.com/hook747/idevice/raw/master/Publish/demo.gif)
 
 

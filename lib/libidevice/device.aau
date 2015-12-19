@@ -1,6 +1,6 @@
 /*
  *	idevice demo
- *  https://github.com/hook747
+ *  https://github.com/xhook7
  *	Oct,2015
  */
  
@@ -15,10 +15,9 @@ namespace libidevice.device{
 	
 	var idevice_cur_fsys_path = "";
 	
-	init = function() {	
+	init = function(deviceList) {	
 		..wbLayout.getEle("loadingDeviceTip").setAttribute("class","animate");
-		..mainForm.setTimeout(function(){..wbLayout.getEle("loadingDeviceTip").setAttribute("class","")},700);	
-		var deviceList = idevice.getDeviceList();
+		..mainForm.setTimeout(function(){..wbLayout.getEle("loadingDeviceTip").setAttribute("class","")},700);
 		var devListUl  = ..wbLayout.getEle("deviceListUl");
 		devListUl.innerHTML = "";
 		if(type(deviceList) !== type.table || #deviceList < 1) {			
@@ -32,7 +31,6 @@ namespace libidevice.device{
 				contentFrame.src = "/res/index.html";
 				contentFrame.xcall("load","/res/index.html");
 			}
-			..mainForm.setTimeout(init,2000);
 			return;
 		}	
 		var isListCurrent = false;
@@ -56,8 +54,7 @@ namespace libidevice.device{
 					showDeviceInfo(deviceInfo);									
 				}
 			}	
-		}
-		..mainForm.setTimeout(init,5000);	
+		}		
 	};
 	
 	formateDiskSize = function(bytes) {

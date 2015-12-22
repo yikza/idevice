@@ -143,11 +143,16 @@ namespace libidevice.device{
 	}
 	
 	thread.command.instance().updateAppIcon = function(dst,bundleId) {
-	
-		var frame = ..wbLayout.getEle("contentFrame");
-		var imgTag = frame.querySelector('#listcontent div span img[appid="'+bundleId+'"]');
-		if(imgTag) {
-			imgTag.src = dst;
+		
+		try{
+			var frame = ..wbLayout.getEle("contentFrame");
+			var imgTag = frame.querySelector('#listcontent div span img[appid="'+bundleId+'"]');
+			if(imgTag) {
+				imgTag.src = dst;
+			}	
+		}
+		catch(e){
+			
 		}
 	};
 	
